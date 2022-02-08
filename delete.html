@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="basic website desing">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="sneha tagadiya">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+        <style>
+            body{
+                background-color:burlywood;
+            }
+            #frm
+            {
+                height: 800px;
+                width: 900px;
+                
+
+            }
+            table{
+                border-collapse: collapse;
+                margin-left: 510px;  
+                font-family: cursive;   
+                font-size: 15px;
+                color: black;
+            }
+           
+            input[type="text"]
+            {
+                height: 25px;
+                width: 180px;
+                border-style: solid;
+            border-color: darkslategrey;
+            border-radius: 5px;
+            border-width: 2px;
+            margin: 2px;
+      
+            }
+            
+           .navbar{
+                background-color: black;
+               
+                height: 80px;
+                width: auto; 
+                position: -webkit-sticky;
+                position: sticky;
+                padding: 0px;
+                top:0px;
+              
+            }
+            .navbar a{
+               
+               height: 55px;
+                width: 150px;
+                
+                display:inline-block ;
+                padding: 15px;
+                text-decoration: none;
+                font-size: 20px;
+                text-align: center;
+                color:white;
+                
+                
+            }
+           
+            .navbar a:hover,dropdown:hover.drpbtn
+            {
+                background-color: darkslategrey;
+                color: white;
+            }   
+            .navbar a.active
+            {
+                background-color:lightblue;
+                color: rgb(14, 8, 49);;
+            }
+            .drpbtn{
+                background-color: black;
+                height: 55px;
+                width: 160px;
+                color: white;
+                padding: 8px;
+                margin: 10px;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .dropdown{
+                
+                position: relative;
+                display: inline-block;
+            
+                
+            }
+            .dropdown-content{
+            
+                display: none;
+                position: absolute;
+                background-color:lightgrey;
+                min-width: 150px;
+                min-height: 150px;
+                box-shadow: 0px 8px 0px rgb(48, 37, 46);
+                z-index: 1;
+            }
+            .dropdown-content a{
+                float: none;
+                color: dimgray;
+                padding: 10px 30px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover{
+                background-color: black;
+                color:lightgray ;
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;
+                
+            }
+            .dropdown:hover .drpbtn
+            {
+                background-color:darkslategrey;
+            }
+            input[type="submit"]
+            {
+                height: 50px;
+                width: 180px;
+                border-style: solid;
+            border-color: rgb(125, 180, 180);
+            border-radius: 5px;
+            border-width: 2px;
+            margin: 10px;
+            font-size: 20px;
+            margin-left: 535px;
+            margin-top:50px;
+            background-color: rgb(10, 3, 3);
+            color: white;
+            
+            }
+           
+           
+        </style>
+        <title>delete page</title>
+        <script>
+                function formvalidation()
+                {
+                    var fid=document.frm.id.value;
+
+                    if(fid=="")
+                    {
+                        alert("plz fill the id");
+                        return false;
+                    }
+                }
+        </script>
+        </head>
+        <body>
+            <nav class="navbar">
+                <div>
+                    <a href="#"><img src="\coll.jpg" height="40" width="80"></a>
+                    <a href="/">Home</a>  
+                    <div class="dropdown">
+                        <button class="drpbtn">Student Details</button>
+                        <div class="dropdown-content"> 
+                          
+                        <a href="testupdate">Update</a>
+                        <a href="testdelete">Delete</a>
+                        <a href="selectdata">View</a>
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                   
+                    <a href="testabout">About Us</a> 
+                    <a href="testcontact">Contact us</a>    
+                    <a href="testlogin" style=" margin: 10px; margin-left: 360px;">Login</a> 
+            <div>
+            </nav>
+            <form id="frm" name="frm" action="deletedata" method="post"  onsubmit="return formvalidation();">
+                <h1 style="margin-left: 490px; margin-bottom: 20px; color: black; font-family: cursive;">delete Information</h1>
+                <table border="3">
+                   
+                    <tr>
+                        <td>Student Id</td>
+                        <td><input type="text" name="sid" placeholder="enter id" ></td>
+                    </tr>
+                    
+                    </table>
+                    <input type="submit" value="Delete">
+                </form><br>
+                <footer class=" container-fluid bg-dark text-white ">
+                    <div class="row">
+                        <div class="col my-3">
+                            <li><a href="testabout">About Us</a></li><br>
+                            <li><a href="testcontact">Contact Us</a></li><br>
+                        <li><a href="selectdata">View data</a></li><br>
+                        </div>
+                        <div class="col my-3"> 
+                            <b>Map</b><br><br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.487665493675!2d72.8251982149!3d18.998220987132584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cec3f462dfbd%3A0x8f317d1b39e5e5ce!2sSenapati+Bapat+Marg%2C+Lower+Parel%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1470383200581" width="80%" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    
+                        </div>
+                        <div class="col my-3">
+                            <h4>Follow Us</h4><br>
+                            <b>Face Book </b> &nbsp <button type="button" class="btn btn-sm bg-light">
+                              <span class="fa fa-facebook" style="font-size: 15px; color: blue; "></a>
+                            </button><br><br>
+                          <b>Twitter  </b>   &nbsp  &nbsp  &nbsp   &nbsp <button type="button" class="btn btn-sm bg-light">
+                              <span class="fa fa-twitter" style="font-size: 15px; color:rgb(52, 168, 214);"></a>
+                            </button><br><br>
+                            <b>Google  </b>  &nbsp  &nbsp  &nbsp  <button type="button" class="btn btn-sm bg-light">
+                              <span class="fa fa-google" style="font-size: 15px; color: green;"></a>
+                            </button><br><br>
+                            <b>Linkedin  </b> &nbsp  &nbsp  <button type="button" class="btn btn-sm bg-light">
+                              <span class="fa fa-linkedin" style="font-size: 15px; color:rgb(84, 84, 243);"></a>
+                            </button>
+                          
+                          </div>
+                        <div class="col my-3">
+                            <h4>Affordable</h4><br>
+                            <p>Great value in terms of both tuition fee & the fact that you can continue to work.</p><br>
+                            <h4>Flexible</h4>
+                            <p>    Freedom to juggle between full time job and pursuing a coveted degree.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container ">
+                        <p>Copyright @ 2021 | Powered By <span style="color:rgb(87, 223, 223);"><b> Sneha Tagadiya</b></span> </p>
+                      </div>
+                      
+          
+              </footer>
+        </body>
+        </html>

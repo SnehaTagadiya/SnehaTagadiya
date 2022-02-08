@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="basic website desing">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="sneha tagadiya">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+        <style>
+            body{
+                background-color:burlywood;
+            }
+     
+           
+          #left{
+             border-style: solid;
+             border-width: 0px;
+             border-color:black;
+            
+             height: 500px;
+             width: 550px;
+             float: left;
+           }
+           #right{
+               border-style: solid;
+               border-width: 0px;
+               border-color: black;
+              
+             height: 500px;
+             width:750px;
+             float: right;
+           }
+            .navbar{
+                background-color: black;
+               
+                height: 80px;
+                width: auto; 
+                position: -webkit-sticky;
+                position: sticky;
+                padding: 0px;
+                top:0px;
+              
+            }
+            .navbar a{
+               
+               height: 55px;
+                width: 150px;
+                
+                display:inline-block ;
+                padding: 15px;
+                text-decoration: none;
+                font-size: 20px;
+                text-align: center;
+                color:white;
+                
+                
+            }
+           
+            .navbar a:hover,dropdown:hover.drpbtn
+            {
+                background-color: darkslategrey;
+                color: white;
+            }   
+            .navbar a.active
+            {
+                background-color:lightblue;
+                color: rgb(14, 8, 49);;
+            }
+            .drpbtn{
+                background-color: black;
+                height: 55px;
+                width: 160px;
+                color: white;
+                padding: 8px;
+                margin: 10px;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .dropdown{
+                
+                position: relative;
+                display: inline-block;
+            
+                
+            }
+            .dropdown-content{
+            
+                display: none;
+                position: absolute;
+                background-color:lightgrey;
+                min-width: 150px;
+                min-height: 150px;
+                box-shadow: 0px 8px 0px rgb(48, 37, 46);
+                z-index: 1;
+            }
+            .dropdown-content a{
+                float: none;
+                color: dimgray;
+                padding: 10px 30px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover{
+                background-color: black;
+                color:lightgray ;
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;
+                
+            }
+            .dropdown:hover .drpbtn
+            {
+                background-color:darkslategrey;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Home page</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script> 
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+        <body>
+            <nav class="navbar">
+            <div>
+
+                <a href="#"><img src="\coll.jpg" height="40" width="80"></a>
+
+                <a href="/">Home</a>  
+                <div class="dropdown">
+                    <button class="drpbtn" >Student Details </button>
+                    <div class="dropdown-content" > 
+                    <!--<a href="testreg">Register</a>-->
+                    <a href="testupdate">Update</a>
+                    <a href="testdelete">Delete</a>
+                    <a href="selectdata">View</a>
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+                <a href="testabout">About Us</a> 
+                <a href="testcontact">Contact us</a>    
+
+                <a href="testlogin" style=" margin: 10px; margin-left: 360px;">Login</a> 
+        <div>
+        </nav>
+        <br>
+        <h1 style="color: cadetblue; text-align: center; text-shadow: 3px 2px paleturquoise; font-family: cursive; text-decoration:underline ;"><marquee direction = "right">basic website desing</marquee> </h1>
+           <!--<div>
+               <img src="\wel.jpg" alt="welcome" height="500" width="1340" style="box-shadow: 10px 20px 20px 20px  rgb(124, 103, 182);">
+            </div>-->
+            <div class="container-fluid ">
+                <div class="carousel slide" data-ride="carousel" id="demo">
+                    <ul class="carousel-indicators">
+                        <li class   ="active" data-target="#demo" data-slide-to="0"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+            
+                    </ul>
+                    <div class="carousel-inner ">
+                        <div class="item active">
+                            <img src="\wel.jpg" style="width: 1400px; height: 400px;">
+                        </div>
+                        <div class="item">
+                            <img src="\df1.jpg"  style="width: 1400px; height: 400px;">
+                        </div>
+                        <div class="item">
+                            <img src="\a2.jpg" style="width: 1400px; height: 400px;">
+                        </div>
+                 
+                        <a class="left carousel-control" href="#demo" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                        
+                        </a>
+                        <a class="right carousel-control" href="#demo" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+            </div>
+            
+            <div id="left">
+                <img src="\coll.jpg" height="250" width="550" style="margin-top: 15px;"><br>
+                <img src="\web.jpg" height="250" width="550" style="margin-top: 15px;">
+        
+            </div>
+            <div id="right" style="margin-bottom: 100px;">
+                <h1 style="color: blue; text-shadow: 3px 2 px yellow; font-size: 45px;box-shadow: 10px 15px 10px 15px yellow;">How to create website desing on Html and CSS.</h1>
+                <h2 style="color: teal; font-size: 30px; ">there are more content use to website:</h2>
+                <ul style="font-size: 20px; font-family: cursive;">
+                    <li>contact us</li>
+                    <li>About Us</li>
+                    <li>Register</li>
+                    <li>Login</li>
+                </ul>
+                <img src="\a2.jpg" height="150" width="300" style="border-radius:65%; box-shadow: 10px 15px 10px 10px turquoise;">
+                <img src="\th.jpg" height="150" width="300" style="border-radius: 25px; margin: 20px; box-shadow: teal 10px 10px 10px 10px;">
+            </div>
+        </div>
+            <footer class=" container-fluid bg-dark text-white ">
+                <div class="row">
+                    <div class="col my-3">
+                        <li><a href="testabout">About Us</a></li><br>
+                        <li><a href="testcontact">Contact Us</a></li><br>
+                    <li><a href="selectdata">View data</a></li><br>
+                    </div>
+                    <div class="col my-3"> 
+                        <b>Map</b><br><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.487665493675!2d72.8251982149!3d18.998220987132584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cec3f462dfbd%3A0x8f317d1b39e5e5ce!2sSenapati+Bapat+Marg%2C+Lower+Parel%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1470383200581" width="80%" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                
+                    </div>
+                    <div class="col my-3">
+                        <h4>Follow Us</h4><br>
+                        <b>Face Book </b> &nbsp <button type="button" class="btn btn-sm bg-light">
+                          <span class="fa fa-facebook" style="font-size: 15px; color: blue; "></a>
+                        </button><br><br>
+                      <b>Twitter  </b>   &nbsp  &nbsp  &nbsp   &nbsp <button type="button" class="btn btn-sm bg-light">
+                          <span class="fa fa-twitter" style="font-size: 15px; color:rgb(52, 168, 214);"></a>
+                        </button><br><br>
+                        <b>Google  </b>  &nbsp  &nbsp  &nbsp  <button type="button" class="btn btn-sm bg-light">
+                          <span class="fa fa-google" style="font-size: 15px; color: green;"></a>
+                        </button><br><br>
+                        <b>Linkedin  </b> &nbsp  &nbsp  <button type="button" class="btn btn-sm bg-light">
+                          <span class="fa fa-linkedin" style="font-size: 15px; color:rgb(84, 84, 243);"></a>
+                        </button>
+                      
+                      </div>
+                    <div class="col my-3">
+                        <h4>Affordable</h4><br>
+                        <p>Great value in terms of both tuition fee & the fact that you can continue to work.</p><br>
+                        <h4>Flexible</h4>
+                        <p>    Freedom to juggle between full time job and pursuing a coveted degree.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="container ">
+                    <p>Copyright @ 2021 | Powered By <span style="color:rgb(87, 223, 223);"><b> Sneha Tagadiya</b></span> </p>
+                  </div>
+                  
+      
+          </footer>
+    </body>
+  
+</html>
